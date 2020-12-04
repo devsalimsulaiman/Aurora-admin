@@ -1,0 +1,19 @@
+not implemented as same as v4 ckeditor
+
+use script tag and src to the ckeditor.js
+
+then add this in your <script>
+   ClassicEditor.create( document.querySelector( '#body' ), {
+			// toolbar: [ 'heading', '|', 'bold', 'italic', 'link' ]
+		} )
+		.then( editor => {
+			window.editor = editor;
+		} )
+		.catch( err => {
+			console.error( err.stack );
+		} );
+
+    }, 1000);
+</script>
+
+see madmin materialize on how i did it
